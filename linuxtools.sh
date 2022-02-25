@@ -52,6 +52,6 @@ sudo apt-get install -y powershell
 
 # Routine upgrade of package
 sudo apt-get upgrade powershell
-wget https://raw.githubusercontent.com/mbouaklaine/MohamedBouaklaine/main/Powershell.sh
+wget https://raw.githubusercontent.com/GithubVictrix/Victrix/main/Powershell.sh
 sudo chmod 777 Powershell.sh 
 runuser -l azureuser -c "/home/azureuser/Powershell.sh"
