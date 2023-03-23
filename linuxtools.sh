@@ -12,7 +12,7 @@ cd /myagent
 sudo wget https://vstsagentpackage.azureedge.net/agent/2.186.1/vsts-agent-linux-x64-2.186.1.tar.gz
 sudo tar zxvf ./vsts-agent-linux-x64-2.186.1.tar.gz
 sudo chmod -R 777 /myagent
-sudo runuser -l azureuser -c "/myagent/config.sh --unattended  --url https://dev.azure.com/victrixlab --auth pat --token ycvs33te7ss6o5vy2fnpoohnfslhbd3rmhhkxk7zflhjo5ifdisq --pool PoolMFQ01"
+sudo runuser -l azureuser -c "/myagent/config.sh --unattended  --url https://dev.azure.com/victrixlab --auth pat --token ycvs33te7ss6o5vy2fnpoohnfslhbd3rmhhkxk7zflhjo5ifdisq --pool pool-vic"
 #sudo runuser -l azureuser -c "/myagent/config.sh --unattended  --url $1 --auth pat --token $2 --pool $3"
 #/myagent/config.sh --unattended  --url "$1" --auth pat --token "$2" --pool "$3"
 sudo /myagent/svc.sh install
