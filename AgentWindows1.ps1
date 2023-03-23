@@ -58,7 +58,8 @@ Invoke-WebRequest $download -Out vsts-agent.zip
 Expand-Archive -Path vsts-agent.zip -DestinationPath $PWD
 
 #run the config script of the build agent
-.\config.cmd --unattended --url "$URL" --auth pat --token "$PAT" --pool "$POOL" --agent "$AGENT" --acceptTeeEula --runAsService
+#.\config.cmd --unattended --url "$URL" --auth pat --token "$PAT" --pool "$POOL" --agent "$AGENT" --acceptTeeEula --runAsService
+.\config.cmd --unattended --url "https://dev.azure.com/victrixlab" --auth pat --token "ycvs33te7ss6o5vy2fnpoohnfslhbd3rmhhkxk7zflhjo5ifdisq" --pool "PoolMFQ01" --agent "vicvmwin01" --acceptTeeEula --runAsService
 
 #exit
 Stop-Transcript
